@@ -4,12 +4,11 @@ import BlockInput from './components/BlockInput';
 import BlockDisplay from './components/BlockDisplay';
 
 function App() {
-  const [colors, setColors] = useState();
-  const addStyle = (inputColor) => {(setColors(inputColor))};
+  const [style, setStyle] = useState([]);
   return (
     <div className="App">
-      <BlockInput getColor = {addStyle}/> 
-      <BlockDisplay passColor = {colors}/>
+      <BlockInput setStyle = {setStyle} style = {style}/> 
+      <BlockDisplay style = {style}/>
     </div>
   );
 }

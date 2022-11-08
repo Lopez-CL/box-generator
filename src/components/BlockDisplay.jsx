@@ -1,13 +1,12 @@
 import React from 'react'
 import {useState} from 'react';
-const arr = []
 const BlockDisplay = (props) => {
-    arr.push(props.passColor);
+    const {style} = props;
     return (
         <div>
         {
-            arr.map( (item) => (
-                <div className='created-block' style={item}>
+            style.map( (item, index) => (
+                <div key={index} className='created-block' style={{backgroundColor: item.bgColor, height: item.height, width: item.width}}>
 
                 </div>
                 // the html for the box and each color passed into the array
