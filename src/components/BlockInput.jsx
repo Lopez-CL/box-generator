@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react';
 const BlockInput = (props) => {
-    const [styleColor, setStyleColor] = useState();
+    const [styleColor, setStyleColor] = useState('');
     // const [arr, setArr] = useState();
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -12,7 +12,7 @@ const BlockInput = (props) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type='text' onChange = {(e) => setStyleColor(e.target.value)}/>
+                <input type='text' onChange = {(e) => setStyleColor(e.target.value)} value = {styleColor}/>
                 <input type='submit' value='Create your box'/>
             </form>
         </div>

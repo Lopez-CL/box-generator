@@ -1,11 +1,18 @@
 import React from 'react'
 import {useState} from 'react';
-const clrArr = [];
+const arr = []
 const BlockDisplay = (props) => {
-    clrArr.push(props.passColor);
+    arr.push(props.passColor);
     return (
         <div>
-            <p>{clrArr}</p>
+        {
+            arr.map( (item) => (
+                <div className='created-block' style={item}>
+
+                </div>
+                // the html for the box and each color passed into the array
+            )) 
+        }
         </div>
     );
 };
