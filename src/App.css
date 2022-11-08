@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+input {
+  margin: 15px;
+}
+
 #container {
   margin: 0 auto;
   display: flex;
