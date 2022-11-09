@@ -19,6 +19,7 @@ const BlockInput = (props) => {
         setStyleHeight('');
         setStyleWidth('');
     };
+    // CRUD OPERATIONS
     return (
         <div>
             <form onSubmit={handleSubmit}>

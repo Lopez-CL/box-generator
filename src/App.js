@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <BlockInput setStyle = {setStyle} style = {style}/> 
-      <BlockDisplay style = {style}/>
+      <BlockDisplay style = {style} setStyle={setStyle}/>
     </div>
   );
 }
